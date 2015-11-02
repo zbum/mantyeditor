@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>manty editor</title>
+    <!-- include jquery -->
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- include libraries BS3 -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css" />
+    <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+
+    <!-- include summernote -->
+    <link rel="stylesheet" href="../dist/mantyeditor.css">
+    <script type="text/javascript" src="../dist/jquery.mantyeditor.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $('.mantyeditor').mantyeditor({height:30});
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <form action="#" novalidate>
+            <div class="form-group">
+                <label for="input">Text</label>
+                <input type="text" class="form-input" id="input" value="Title">
+            </div>
+            <div class="form-group">
+                <label for="contents">Contents</label>
+                <textarea name="text" class="mantyeditor" id="contents" title="Contents"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">submit</button>
+        </form>
+    </div>
+</body>
+</html>
